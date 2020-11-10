@@ -8,21 +8,122 @@
 
 </head>
 <body>
-	<div class="login_warp" id="app">
+	<div class="login_wrap" id="app">
 			<div class="login_header">
-				<span @click="cur=0" :class="{active:cur==0}">一齐翻译</span>
-				<span @click="cur=1" :class="{active:cur==1}">资质证书</span>
-				<span @click="cur=2" :class="{active:cur==2}">翻译团队</span>
-				<span @click="cur=3" :class="{active:cur==3}">服务类型</span>
+				<span @click="cur=0" :class="{active:cur==0}" class="tit tra1">一齐翻译</span>
+				<span @click="cur=1" :class="{active:cur==1}" class="tit qua2">资质证书</span>
+				<span @click="cur=2" :class="{active:cur==2}" class="tit team3">翻译团队</span>
+				<span @click="cur=3" :class="{active:cur==3}" class="tit ser4">服务类型</span>
 			</div>
 				<div class="Cbody">
 				   <div v-show="cur==0" class="Cbody_item1">
+					   <div class="Translation">
+						   <div class="Translation_box">
+							   <img src="./img/trans1.jpg">
+							   <div class="Trans_intro">
+							   <p class="title"><b>公司介绍</b></p>
+							   <div class="line"></div>
+							   <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								   一齐文化科技（武汉）有限公司是湖北省首家获得人力资源服务许可的外资企业，旨在搭建
+								   国外高级技术人才行业精英和急需精英的中国企业之间的桥梁，促进中西文化的交汇与融合，同时
+								   服务国家“一带一路”倡议和中部崛起战略。业务范围涵盖涉外人力资源服务、企业管理咨询及翻译服务等。
+								   其翻译服务已获得了中国翻译协会的会员资格认证。
+							   </span>
+							</div>
+						   </div>
+						   <div class="Translation_box">
+							<img src="./img/Translation2.jpg">
+							<div class="Trans_intro">
+							<p class="title"><b>翻译部介绍</b></p>
+							<div class="line"></div>
+							<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								一齐翻译是一齐文化科技有限公司的翻译板块，作为中部领先的语言服务提供商，提供商务口译、行业笔译、翻译人才培训等三大业务，
+								范围涵盖光电子信息、医药、生物工程、金融财报、建筑路桥、汽车及配件、航空航天、船舶制造、图书出版、网站及游戏本地化等诸多
+								行业。<br>
+								我们拥有国内外顶尖大学语言专业毕业的专家翻译，谙熟商务谈判规则技巧的多语人才和工程咨询管理行业的大牛级双语专家。多名译员具有
+								海外专业领域留学背景，相关行业5年以上翻译经验。一齐翻译拥有30多人的母语国家专业译创及审译团队，谙熟海外思维，从而保证译文的
+								地道和精准传达。
+							</span>
+						   </div>
+						</div>
+					   </div>
 				   </div>
 				   <div v-show="cur==1" class="Cbody_item2">
+					   <div class="qulifaication">
+					   <div class="qualifaication_box">
+						   <div class="img_box">
+							<img src="./img/qualification1.jpg">
+						   </div>
+						   <div class="img_box">
+							<img src="./img/qualification2.jpg">
+						   </div>
+						   <div class="img_box">
+							<img src="./img/qualification3.jpg">
+						   </div>
+					   </div>
+					   <div class="qua_des">
+						 
+						   <p style="color: #4DAA37;font-weight: bold;">一齐翻译为中国翻译协会的会员</p>
+						   <p style="color: #E78A29;font-weight: bold;">旗下译员拥有各类翻译资格证书及翻译培训资质</p>
+						
+					   </div>
 				   </div>
+				</div>
 				   <div v-show="cur==2" class="Cbody_item3">
+					<div class="team">
+						<div class="team_box">
+							<div class="img_box">
+								<img src="./img/team1.jpg">
+							</div>
+							<div class="img_box">
+								<img src="./img/Translation1.jpg">
+							</div>
+							<div class="img_box">
+								<img src="./img/Translation2.jpg">
+							</div>
+						</div>
+						<div class="team_des">
+							<p style="color: #E78A29;font-weight: bold;">一齐翻译团队拥有多名国内外资深翻译</p>
+							<p style="color: #26A8D2;font-weight: bold;">在国内外各类商务谈判现场</p>
+							<p style="color: #4DAA37;font-weight: bold;">大型会议上展现了自己的专业技能和风采</p>
+						</div>
+					</div>
 				   </div>
 				   <div v-show="cur==3" class="Cbody_item4">
+					   <div class="service">
+						   <div class="service_box">
+							   <div class="service_type">
+								   <div class="img" >
+									   <img src="./img/service1.jpg">
+								   </div>
+								   <p class="word" >陪同口译、会议口译、同声口译、远程音视频口译</p>
+							   </div>
+							   <div class="service_type">
+								<div class="img" >
+									<img  src="./img/service2.jpg">
+								</div>
+								<p class="word" >证书翻译、公证翻译、标书翻译、图纸翻译、行业笔译、技术写作、
+									音视频字幕制作
+								</p>
+							   </div>
+						   </div>
+						   <div class="service_box">
+							<div class="service_type">
+								<div class="img" >
+									<img src="./img/service1.jpg">
+								</div>
+								<p class="word">陪同口译、会议口译、同声口译、远程音视频口译</p>
+							</div>
+							<div class="service_type">
+							 <div class="img" >
+								 <img src="./img/service2.jpg">
+							 </div>
+							 <p class="word">证书翻译、公证翻译、标书翻译、图纸翻译、行业笔译、技术写作、
+								 音视频字幕制作
+							 </p>
+							</div>
+						   </div>
+					   </div>
 				</div>
 			  </div>
 		</div>
